@@ -4,6 +4,21 @@ set namespaceSeparator ::
 abstract class "flutter_uml::src::widgets.dart::Widget" {
 }
 
+abstract class "flutter_uml::src::widgets.dart::RenderObjectWidget" {
+}
+
+"flutter_uml::src::widgets.dart::Widget" <|-- "flutter_uml::src::widgets.dart::RenderObjectWidget"
+
+abstract class "flutter_uml::src::widgets.dart::SingleChildRenderObjectWidget" {
+}
+
+"flutter_uml::src::widgets.dart::RenderObjectWidget" <|-- "flutter_uml::src::widgets.dart::SingleChildRenderObjectWidget"
+
+abstract class "flutter_uml::src::widgets.dart::MultiChildRenderObjectWidget" {
+}
+
+"flutter_uml::src::widgets.dart::RenderObjectWidget" <|-- "flutter_uml::src::widgets.dart::MultiChildRenderObjectWidget"
+
 abstract class "flutter_uml::src::routes.dart::Route" {
 }
 
