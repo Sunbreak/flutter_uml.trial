@@ -7,5 +7,29 @@ abstract class "flutter_uml::src::widgets.dart::Widget" {
 abstract class "flutter_uml::src::routes.dart::Route" {
 }
 
+abstract class "flutter_uml::src::routes.dart::OverlayRoute" {
+}
+
+"flutter_uml::src::routes.dart::Route" <|-- "flutter_uml::src::routes.dart::OverlayRoute"
+
+abstract class "flutter_uml::src::routes.dart::TransitionRoute" {
+}
+
+"flutter_uml::src::routes.dart::OverlayRoute" <|-- "flutter_uml::src::routes.dart::TransitionRoute"
+
+abstract class "flutter_uml::src::routes.dart::ModalRoute" {
+}
+
+"flutter_uml::src::routes.dart::TransitionRoute" <|-- "flutter_uml::src::routes.dart::ModalRoute"
+"flutter_uml::src::routes.dart::LocalHistoryRoute" <|-- "flutter_uml::src::routes.dart::ModalRoute"
+
+abstract class "flutter_uml::src::routes.dart::PageRoute" {
+}
+
+"flutter_uml::src::routes.dart::ModalRoute" <|-- "flutter_uml::src::routes.dart::PageRoute"
+
+abstract class "flutter_uml::src::routes.dart::LocalHistoryRoute" {
+}
+
 
 @enduml
